@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+	<head></head>
+	<body>
+		<script type="text/javascript">
+		//值传递
+ // var param = { name: '叶小钗', age: 33 };
+ // function alertArgurment(param) {
+ //     for (var k in param ) {
+ //         alert(k + ': ' + param [k]);
+ //     }
+ // }
+ // alertArgurment(param);
+
+
+ // var param = { name: '叶小钗', age: 33 };
+ // function alertArgurment(d) {
+ //     param.id = '刀狂剑痴';
+ //     for (var k in d) {
+ //         alert(k + ': ' + d[k]);
+ //     }
+ // }
+ // alertArgurment(param);
+
+
+ // var a = {};
+ // a.a = 6;
+ // alert(a.a);
+ 
+ // var b = a;
+ // b.a = 66;
+ // alert(a.a);
+
+//  function setName(obj){  
+//     obj.name="ted";  
+//     obj=new Object();  
+//     obj.name="marry";  
+// }  
+// var obj=new Object();  
+// setName(obj);  
+// alert(obj.name);
+
+//变量提升
+ // var a = 10;
+ //         function test() {
+ //             a = 100;
+ //             alert(a);
+ //             alert(this.a);
+ //             var a;
+ //             alert(a);
+ //         }
+ //         test()
+
+//foo.bar作为参数并没有调用
+  // var foo = {
+  //     bar: function() {
+  //         return this.baz;
+  //     },
+  //     baz: 1
+  // };
+  // //var a=foo.bar();
+  // (function() {
+  //     alert(typeof arguments[0]());
+  // })(foo.bar)
+
+ // var foo = {
+ //  	bar: function() {
+ //  		this.baz=123;
+ //  		return this.baz;
+ // 	},
+ //  	baz: 1
+ // };
+ // (function() { 
+ // 	alert(arguments[0]());
+ // })(foo.bar)
+
+
+//随机洗牌排序
+// function shuffle(array){
+//     for(var i = array.length-1; i > 0; i--) {
+//          var rnd = Math.floor(Math.random() * (i+1));
+//          var tmp = array[i];
+//          array[i] = array[rnd];
+//          array[rnd] = tmp;
+//     }
+// }
+// function isInOrder(array) {
+//     for(var i = 0; i < array.length-1; i++)
+//         if(array[i]>array[i+1])
+//             return false;
+//     return true;
+// }
+ 
+// function adhocSort(array){
+//     while(!isInOrder(array))
+//         shuffle(array);
+//     return array;
+// }
+ 
+// adhocSort([3,2,1,6,7]);
+
+		</script>
+	</body>
+</html>
